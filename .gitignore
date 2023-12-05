@@ -2,7 +2,6 @@
 build/
 !gradle/wrapper/gradle-wrapper.jar
 !**/src/
-
 ### IntelliJ IDEA ###
 *.idea
 .idea/modules.xml
@@ -36,3 +35,4 @@ bin/
 
 ### Mac OS ###
 .DS_Store
+/src/

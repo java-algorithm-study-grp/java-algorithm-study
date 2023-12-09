@@ -1,7 +1,5 @@
 package 승재.ch7;
 
-import kotlin.jvm.JvmStatic;
-import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;

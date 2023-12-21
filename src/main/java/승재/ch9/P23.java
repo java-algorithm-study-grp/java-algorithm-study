@@ -2,7 +2,6 @@ package 승재.ch9;
 
 import java.util.LinkedList;
 import java.util.Queue;
-import java.util.Scanner;
 
 public class P23 {
 

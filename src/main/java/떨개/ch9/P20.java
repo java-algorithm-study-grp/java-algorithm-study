@@ -12,15 +12,15 @@ public class P20 {
         String input = "[]{}()";
         // String input = "[{}]((()))[{}]((()))[{}]((()))[{}]((()))[{}]((()))[{}]((()))[{}]((()))[{}]((()))[{}]((()))[{}]((()))[{}]((()))[{}]((()))[{}]((()))[{}]((()))[{}]((()))[{}]((()))[{}]((()))[{}]((()))[{}]((()))[{}]((()))[{}]((()))[{}]((()))[{}]((()))[{}]((()))";
 
-        long start1 = System.currentTimeMillis();
+        // long start1 = System.currentTimeMillis();
         System.out.println(isValidBracket1(input));
-        long end1 = System.currentTimeMillis();
-        System.out.println("1 : " + (end1 - start1));
+        // long end1 = System.currentTimeMillis();
+        // System.out.println("1 : " + (end1 - start1));
 
-        long start2 = System.currentTimeMillis();
+        // long start2 = System.currentTimeMillis();
         System.out.println(isValidBracket2(input));
-        long end2 = System.currentTimeMillis();
-        System.out.println("2 : " + (end2 - start2));
+        // long end2 = System.currentTimeMillis();
+        // System.out.println("2 : " + (end2 - start2));
     }
 
     private static boolean isValidBracket1(String input) {
@@ -69,7 +69,7 @@ public class P20 {
             if(small > 0 || middle > 0 || big > 0) return false;
         }
 
-        return true;
+        return small == 0 && middle == 0 && big == 0;
     }
 
     private static boolean isValidBracket2(String input) {

@@ -1,5 +1,8 @@
 package 주앤.ch8;
 
+import java.util.LinkedList;
+import java.util.Queue;
+
 /**
  * 문제 : 328. Odd Even Linked List
  * 해결 과정 : 홀수 순서는 다음 홀수 순서를 바라보게 하고, 짝수 순서도 다음 짝수 순서를 바라보게 하면서, 기존의 하나로 연결된 것을 끊어내며,
@@ -10,6 +13,8 @@ package 주앤.ch8;
  */
 public class P18 {
 	public ListNode oddEvenList(ListNode head) {
+
+		Queue<Integer> q = new LinkedList<>();
 
         if(head == null){ // 노드가 null이면, null 반환
             return null;

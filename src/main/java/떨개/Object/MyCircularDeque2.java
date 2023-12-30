@@ -36,11 +36,11 @@ public class MyCircularDeque2 {
     }
 
     public int getFront() {
-        return deque.getFirst();
+        return deque.getFirst() == null ? -1 : deque.getFirst();
     }
 
     public int getRear() {
-        return deque.getLast();
+        return deque.getLast() == null ? -1 : deque.getLast();
     }
 
     public boolean isEmpty() {

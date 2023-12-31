@@ -74,7 +74,7 @@ public class P26 {
         }
 
         public boolean deleteFront() {
-            if (deque.size() == 0) {
+            if (deque.isEmpty()) {
                 return false;
             }
             deque.removeFirst();
@@ -82,7 +82,7 @@ public class P26 {
         }
 
         public boolean deleteLast() {
-            if (deque.size() == 0) {
+            if (deque.isEmpty()) {
                 return false;
             }
             deque.removeLast();
@@ -90,21 +90,21 @@ public class P26 {
         }
 
         public int getFront() {
-            if (deque.size() > 0) {
+            if (!deque.isEmpty()) {
                 return deque.getFirst();
             }
             return -1;
         }
 
         public int getRear() {
-            if (deque.size() > 0) {
+            if (deque.isEmpty()) {
                 return deque.getLast();
             }
             return -1;
         }
 
         public boolean isEmpty() {
-            return deque.size() == 0;
+            return deque.isEmpty();
         }
 
         public boolean isFull() {

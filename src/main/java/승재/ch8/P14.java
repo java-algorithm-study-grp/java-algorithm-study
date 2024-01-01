@@ -1,5 +1,7 @@
 package 승재.ch8;
 
+import 승재.common.ListNode;
+
 public class P14 {
 
     public ListNode mergeTwoLists(ListNode list1, ListNode list2) {

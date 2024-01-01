@@ -3,6 +3,7 @@ package 승재.ch8;
 import static org.assertj.core.api.Assertions.assertThat;
 
 import org.junit.jupiter.api.Test;
+import 승재.common.ListNode;
 
 class P15Test {
 

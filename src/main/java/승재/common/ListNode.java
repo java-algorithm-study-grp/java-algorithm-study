@@ -1,10 +1,10 @@
-package 승재.ch8;
+package 승재.common;
 
 import java.util.Objects;
 
 public class ListNode {
-    int val;
-    ListNode next;
+    public int val;
+    public ListNode next;
 
     public ListNode() {
 

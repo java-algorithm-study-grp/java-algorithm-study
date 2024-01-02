@@ -1,4 +1,4 @@
-package 지은.ch10;
+package 지은.ch11;
 
 /*
 Design a HashMap without using any built-in hash table libraries.

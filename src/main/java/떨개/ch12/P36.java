@@ -68,4 +68,47 @@ public class P36 {
         return stack.peek();
     }
 
+
+
+    private static void dfs(List<String> result, Map<Integer, List<Character>> dic, String digits, int index, StringBuilder path) {
+
+        // 끝까지 탐색했으면 결과를 저장하고 리턴
+        if(path.length() == digits.length()) {
+            result.add(String.valueOf(path));
+            return;
+        }
+
+        // 현재 자리 숫자에 해당하는 모든 문자열 탐색
+        for (Character c : dic.get(Character.getNumericValue(digits.charAt(index)))) {
+            // 현재 자리 + 1, 지금까지 구성된 문자열 path 이용 재귀 DFS
+            dfs(result, dic, digits, index + 1, new StringBuilder(path).append(c));
+        }
+    }
+
+    private static List<String> answer2(String digits) {
+
+        // 2. 재귀 DFS를 이용한 조합 탐색
+        //  - 풀이법을 보고 그대로 작성, 이해는 했으나 스스로 풀 때 이 방법을 떠올랐음에도
+        //    코드를 작성하지 못하여 다시 복기를 해야함.
+
+        List<String> result = new ArrayList<>();
+
+        if(digits.isEmpty())
+            return result;
+
+        Map<Integer, List<Character>> phone = new HashMap<>() {{
+            put(2, Arrays.asList('a', 'b', 'c'));
+            put(3, Arrays.asList('d', 'e', 'f'));
+            put(4, Arrays.asList('g', 'h', 'i'));
+            put(5, Arrays.asList('j', 'k', 'l'));
+            put(6, Arrays.asList('m', 'n', 'o'));
+            put(7, Arrays.asList('p', 'g', 'r', 's'));
+            put(8, Arrays.asList('t', 'u', 'v'));
+            put(9, Arrays.asList('w', 'x', 'y', 'z'));
+        }};
+
+        dfs(result, phone, digits, 0, new StringBuilder());
+
+        return result;
+    }
 }

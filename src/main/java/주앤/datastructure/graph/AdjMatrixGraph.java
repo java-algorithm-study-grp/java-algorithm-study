@@ -11,7 +11,7 @@ import java.util.Queue;
  * DFS 스택 구현 : iterDFT()
  * BFS 큐 구현 : breadthFirstTraversal()
  */
-public class AdjMatrix<T> {
+public class AdjMatrixGraph<T> {
 
 	static class Vertex<T> {
 		T item;
@@ -30,12 +30,12 @@ public class AdjMatrix<T> {
 	private int[][] matrix;
 
 
-	// 인덱스 정점에 방문 여부
+	// 인덱스 정점에 방문 여부 ( 0 : 방문X, 1 : 방문)
 	private boolean[] visited;
 	private int capacity;
 	private int num;
 
-	public AdjMatrix(int capacity){
+	public AdjMatrixGraph(int capacity){
 		this.vertices = new Vertex[capacity];
 		this.matrix = new int[capacity][capacity]; // 초기값 0
 		this.visited = new boolean[capacity]; // 초기값 false
@@ -160,7 +160,7 @@ public class AdjMatrix<T> {
 	}
 
 	public static void main(String[] args) {
-		AdjMatrix<Integer> graph = new AdjMatrix<>(7);
+		AdjMatrixGraph<Integer> graph = new AdjMatrixGraph<>(7);
 
 		for (int i = 0; i < graph.getCapacity(); i++) {
 			graph.addVertex(i);

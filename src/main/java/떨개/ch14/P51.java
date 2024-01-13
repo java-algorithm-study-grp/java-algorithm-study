@@ -63,7 +63,7 @@ public class P51 {
         //     }
         // }
         //
-        // return null;
+        return null;
     }
 
     private static TreeNode mergeNodes2(TreeNode root1, TreeNode root2) {

@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 /*
-문제 : L179.가장 큰 수
+문제 : L349.두 배열의 교집합
 풀이 : 이진탐색 구현으로 풀이
 분석 : 실행시간이 하위 5%로 나올 만큼 심각하게 비효율적이다.
 		이유는 중복을 없애고 시작하기 위해, stream distinct를 사용하였는데, 이를 사용하는 것보다

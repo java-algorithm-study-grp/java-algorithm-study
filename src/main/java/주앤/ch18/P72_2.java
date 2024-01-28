@@ -9,7 +9,7 @@ import java.util.Set;
 import java.util.stream.Collectors;
 
 /*
-문제 : L179.가장 큰 수
+문제 : L349.두 배열의 교집합
 풀이 : [책] Arrays의 binarySearch 메소드 활용
 새로 알거나 헷갈리는 부분:
 	- Arrays.binarySearch(int[] arr, int num) -> num과 같은 수를 이진탐색하여 인덱스 반환
